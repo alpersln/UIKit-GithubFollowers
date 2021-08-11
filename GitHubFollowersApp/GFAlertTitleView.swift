@@ -1,5 +1,5 @@
 //
-//  GFButton.swift
+//  GFAlertTitleView.swift
 //  GitHubFollowersApp
 //
 //  Created by calatinalper on 11.08.2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GFButton: UIButton {
+class GFAlertTitleView: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -17,20 +17,18 @@ class GFButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    init(backgroundColor: UIColor,title: String) {
+    init(textAligment:NSTextAlignment, fontSize: CGFloat) {
         super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        self.setTitle(title, for: .normal)
+        self.textAlignment = textAlignment
+        self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
         configure()
     }
     
-    
-    private func configure(){
-        layer.cornerRadius = 10
-        titleLabel?.textColor = .white
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+    private func configure() {
+        textColor = .label
+        adjustsFontSizeToFitWidth = true
+        minimumScaleFactor = 0.9
+        lineBreakMode = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
 }

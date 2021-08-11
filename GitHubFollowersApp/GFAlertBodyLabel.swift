@@ -1,5 +1,5 @@
 //
-//  GFButton.swift
+//  GFAlertBodyLabel.swift
 //  GitHubFollowersApp
 //
 //  Created by calatinalper on 11.08.2021.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class GFButton: UIButton {
-
+class GFAlertBodyLabel: UILabel {
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -17,20 +17,20 @@ class GFButton: UIButton {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    init(backgroundColor: UIColor,title: String) {
+    init(textAligment:NSTextAlignment) {
         super.init(frame: .zero)
-        self.backgroundColor = backgroundColor
-        self.setTitle(title, for: .normal)
+        self.textAlignment = textAlignment
+        
         configure()
     }
     
-    
-    private func configure(){
-        layer.cornerRadius = 10
-        titleLabel?.textColor = .white
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+    private func configure() {
+        textColor = .secondaryLabel
+        font = UIFont.preferredFont(forTextStyle: .body)
+        adjustsFontSizeToFitWidth = true
+        minimumScaleFactor = 0.75
+        lineBreakMode = .byWordWrapping
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
+
 }

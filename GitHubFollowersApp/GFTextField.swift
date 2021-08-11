@@ -20,6 +20,8 @@ class GFTextField: UITextField {
     //3 line code above otomatically fill bc storyboard initializers
     
     private func configure() {
+        translatesAutoresizingMaskIntoConstraints = false
+        
         layer.cornerRadius = 10
         layer.borderWidth = 2
         layer.borderColor = UIColor.systemGray4.cgColor
@@ -33,9 +35,9 @@ class GFTextField: UITextField {
         
         backgroundColor = .tertiarySystemBackground
         autocorrectionType = .no
-        
+        returnKeyType = .go
         placeholder = "Enter a username"
-        translatesAutoresizingMaskIntoConstraints = false
+        
     }
     
 }
