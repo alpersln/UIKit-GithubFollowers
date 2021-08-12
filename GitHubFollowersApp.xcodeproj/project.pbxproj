@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E55B6EC26C59DB3005971C7 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E55B6EB26C59DB3005971C7 /* Follower.swift */; };
+		3E55B6F026C59E35005971C7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E55B6EF26C59E35005971C7 /* User.swift */; };
+		3E55B6F726C5BF2E005971C7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E55B6F626C5BF2E005971C7 /* NetworkManager.swift */; };
 		3E62522626C3A8BE004E4906 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62522526C3A8BE004E4906 /* AppDelegate.swift */; };
 		3E62522826C3A8BE004E4906 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E62522726C3A8BE004E4906 /* SceneDelegate.swift */; };
 		3E62522F26C3A8BF004E4906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E62522E26C3A8BF004E4906 /* Assets.xcassets */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E55B6EB26C59DB3005971C7 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		3E55B6EF26C59E35005971C7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3E55B6F626C5BF2E005971C7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		3E62522226C3A8BE004E4906 /* GitHubFollowersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubFollowersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E62522526C3A8BE004E4906 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E62522726C3A8BE004E4906 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +57,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E55B6E626C59554005971C7 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E62525A26C44D61004E4906 /* GFAlertVC.swift */,
+				3E62524526C3C88C004E4906 /* GFButton.swift */,
+				3E62524A26C3CEFA004E4906 /* GFTextField.swift */,
+				3E62525226C448D7004E4906 /* GFAlertTitleView.swift */,
+				3E62525526C44C0A004E4906 /* GFAlertBodyLabel.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		3E55B6E726C59585005971C7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3E62523D26C3B361004E4906 /* SearchVC.swift */,
+				3E62524E26C3FD54004E4906 /* FollowerListVC.swift */,
+				3E62524026C3B3BD004E4906 /* FavoritesListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		3E55B6E826C595AF005971C7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3E62522526C3A8BE004E4906 /* AppDelegate.swift */,
+				3E62522726C3A8BE004E4906 /* SceneDelegate.swift */,
+				3E62523026C3A8BF004E4906 /* LaunchScreen.storyboard */,
+				3E62522E26C3A8BF004E4906 /* Assets.xcassets */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3E55B6E926C595F2005971C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3E62525D26C45D65004E4906 /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3E55B6EA26C59D7F005971C7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E55B6EB26C59DB3005971C7 /* Follower.swift */,
+				3E55B6EF26C59E35005971C7 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E55B6F526C5BEFE005971C7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3E55B6F626C5BF2E005971C7 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		3E62521926C3A8BD004E4906 = {
 			isa = PBXGroup;
 			children = (
@@ -70,19 +134,12 @@
 		3E62522426C3A8BE004E4906 /* GitHubFollowersApp */ = {
 			isa = PBXGroup;
 			children = (
-				3E62522526C3A8BE004E4906 /* AppDelegate.swift */,
-				3E62522726C3A8BE004E4906 /* SceneDelegate.swift */,
-				3E62523D26C3B361004E4906 /* SearchVC.swift */,
-				3E62524E26C3FD54004E4906 /* FollowerListVC.swift */,
-				3E62524026C3B3BD004E4906 /* FavoritesListVC.swift */,
-				3E62524526C3C88C004E4906 /* GFButton.swift */,
-				3E62524A26C3CEFA004E4906 /* GFTextField.swift */,
-				3E62525226C448D7004E4906 /* GFAlertTitleView.swift */,
-				3E62525526C44C0A004E4906 /* GFAlertBodyLabel.swift */,
-				3E62525A26C44D61004E4906 /* GFAlertVC.swift */,
-				3E62525D26C45D65004E4906 /* UIViewController+Ext.swift */,
-				3E62523026C3A8BF004E4906 /* LaunchScreen.storyboard */,
-				3E62522E26C3A8BF004E4906 /* Assets.xcassets */,
+				3E55B6F526C5BEFE005971C7 /* Managers */,
+				3E55B6EA26C59D7F005971C7 /* Model */,
+				3E55B6E726C59585005971C7 /* Screens */,
+				3E55B6E626C59554005971C7 /* Custom Views */,
+				3E55B6E926C595F2005971C7 /* Extensions */,
+				3E55B6E826C595AF005971C7 /* Support */,
 				3E62523326C3A8BF004E4906 /* Info.plist */,
 			);
 			path = GitHubFollowersApp;
@@ -157,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E55B6F026C59E35005971C7 /* User.swift in Sources */,
 				3E62524B26C3CEFA004E4906 /* GFTextField.swift in Sources */,
 				3E62524126C3B3BD004E4906 /* FavoritesListVC.swift in Sources */,
 				3E62525626C44C0A004E4906 /* GFAlertBodyLabel.swift in Sources */,
@@ -164,7 +222,9 @@
 				3E62524626C3C88C004E4906 /* GFButton.swift in Sources */,
 				3E62525B26C44D61004E4906 /* GFAlertVC.swift in Sources */,
 				3E62525326C448D7004E4906 /* GFAlertTitleView.swift in Sources */,
+				3E55B6EC26C59DB3005971C7 /* Follower.swift in Sources */,
 				3E62523E26C3B361004E4906 /* SearchVC.swift in Sources */,
+				3E55B6F726C5BF2E005971C7 /* NetworkManager.swift in Sources */,
 				3E62524F26C3FD54004E4906 /* FollowerListVC.swift in Sources */,
 				3E62522626C3A8BE004E4906 /* AppDelegate.swift in Sources */,
 				3E62522826C3A8BE004E4906 /* SceneDelegate.swift in Sources */,

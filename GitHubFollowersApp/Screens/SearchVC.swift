@@ -27,7 +27,7 @@ class SearchVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         //just before view show on the screen,viewWillAppear helps to do something(hide bar) before the view shows up.
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func createDismissKeyboardTapGesture() {
